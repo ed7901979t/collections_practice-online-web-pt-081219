@@ -9,7 +9,8 @@ def soft_array_des(array)
 end 
 
 def soft_array_char_count(array)
-  array.sort {word.length < (word.length -1)}
+ array.sort do |left, right|
+    left.length <=> right.length
 
 end
 
